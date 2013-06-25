@@ -1,0 +1,24 @@
+{
+  "name": "mongoose-socket",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node build/server.js",
+    "debug": "NODE_PATH=./:./build/apps;node-dev --debug build/server.js"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-notify": "*",
+    "grunt-shell": "*",
+    "growl": "*",
+    "chai": "*"
+  },
+  "dependencies": {
+  }
+}
