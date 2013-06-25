@@ -14,6 +14,7 @@
     "grunt-contrib-compass": "*",
     "grunt-contrib-concat": "*",
     "grunt-contrib-uglify": "*",
+    "grunt-contrib-jade": "*",
     "grunt-notify": "*",
     "grunt-shell": "*",
     "growl": "*",

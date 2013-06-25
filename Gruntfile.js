@@ -21,11 +21,18 @@ module.exports = function(grunt) {
     },
     watch: {
         files: ['**/*.coffee'],
-        tasks: ['coffee', 'shell']
+        tasks: ['coffee', 'shell', 'jade']
     },
     shell: {
       componentCompile: {
         command: 'make;'
+      }
+    },
+    jade: {
+      compile: {
+        files: {
+          "index.html": "index.jade"
+        }
       }
     }
   });
@@ -34,8 +41,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-notify');
+  grunt.loadNpmTasks('grunt-contrib-jade');
 
   // Default task(s).
-  grunt.registerTask('default', ['coffee', 'shell']);
+  grunt.registerTask('default', ['coffee', 'shell', 'jade']);
 
 };
