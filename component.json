@@ -1,0 +1,21 @@
+{
+  "name": "simple-d3-charts",
+  "repo": "nashibao/simple-d3-charts",
+  "description": "simple d3 charts",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/jquery": "*",
+    "rreverser/knockout": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "charts/pie.js",
+    "index.js"
+  ],
+  "styles": [
+    "simple-d3-charts.css"
+  ]
+}
