@@ -1,4 +1,4 @@
-var line, line_chart, pie, pie_chart, _update, _update_line,
+var line, line_chart, pie, pie_chart, _update_line, _update_pie,
   _this = this;
 
 pie = require('simple-d3-charts').pie;
@@ -12,7 +12,7 @@ pie_chart = new pie("#pie-chart", {
   }
 });
 
-_update = function() {
+_update_pie = function() {
   var arrayRange, arraySize, d, fillArray,
     _this = this;
   arrayRange = 100000;
@@ -27,17 +27,25 @@ _update = function() {
   return pie_chart.update(d);
 };
 
-_update();
+_update_pie();
 
 $("#pie-chart-update").click(function() {
-  return _update();
+  return _update_pie();
 });
 
 line = require('simple-d3-charts').line;
 
 line_chart = new line("#line-chart", {
   width: 600,
-  height: 300
+  height: 300,
+  scale_x: {
+    min: 0,
+    max: 10
+  },
+  scale_y: {
+    min: 0,
+    max: 10
+  }
 });
 
 _update_line = function() {
@@ -55,3 +63,7 @@ _update_line = function() {
 };
 
 _update_line();
+
+$("#line-chart-update").click(function() {
+  return _update_line();
+});
