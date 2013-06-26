@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         }
     },
     watch: {
-        files: ['**/*.coffee'],
+        files: ['**/*.coffee', '**/*.jade'],
         tasks: ['coffee', 'shell', 'jade']
     },
     shell: {
