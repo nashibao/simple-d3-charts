@@ -12,6 +12,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": [
+    "charts/line.js",
     "charts/pie.js",
     "index.js"
   ],

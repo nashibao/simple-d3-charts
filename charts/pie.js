@@ -9,7 +9,6 @@ Pie = (function() {
     this.update = __bind(this.update, this);
     var _ref, _ref1, _ref2, _ref3, _ref4, _ref5, _ref6, _ref7,
       _this = this;
-    console.log(options);
     this.pie_width = (_ref = options != null ? (_ref1 = options.pie) != null ? _ref1.width : void 0 : void 0) != null ? _ref : 450;
     this.pie_height = (_ref2 = options != null ? (_ref3 = options.pie) != null ? _ref3.height : void 0 : void 0) != null ? _ref2 : 300;
     this.pie_r = (_ref4 = options != null ? (_ref5 = options.pie) != null ? _ref5.r : void 0 : void 0) != null ? _ref4 : 100;
