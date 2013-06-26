@@ -1,7 +1,6 @@
 class Pie
   #range of potential values for each item
   constructor: (dom, options)->
-    console.log options
     @pie_width = options?.pie?.width ? 450
     @pie_height = options?.pie?.height ? 300
     @pie_r = options?.pie?.r ? 100

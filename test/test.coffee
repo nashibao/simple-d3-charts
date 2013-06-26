@@ -1,10 +1,9 @@
 
+
+# pie chart
 pie = require('simple-d3-charts').pie
 
-$.fn.pie = (options) ->
-  return new pie "#" + this.attr("id"), options
-
-pie_chart = $("#easy-as-pie-chart").pie({
+pie_chart = new pie("#pie-chart", {
     pie:
       width: 300
       height: 300
@@ -27,3 +26,24 @@ $("#pie-chart-update").click ()=>
   _update()
 
 # updateInterval = window.setInterval(_update, 500)
+
+line = require('simple-d3-charts').line
+
+line_chart = new line("#line-chart", {
+    width: 600
+    height: 300
+  })
+
+_update_line = ()->
+  d = []
+  arrayRange = 10
+  for i in [0..10]
+    d.push({
+        data_label: "data_label"
+        x: i
+        y: Math.ceil(Math.random() * (arrayRange))
+      })
+  line_chart.update(d)
+
+_update_line()
+
