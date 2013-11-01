@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "bestiejs/lodash": "*",
+    "lodash/lodash": "*",
     "component/jquery": "*",
     "rreverser/knockout": "*"
   },
